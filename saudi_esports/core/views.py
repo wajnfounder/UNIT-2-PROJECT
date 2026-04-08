@@ -1,28 +1,30 @@
 from django.shortcuts import render
-from django.http import HttpRequest,HttpResponse
+from django.http import HttpRequest, HttpResponse
 
-# Create your views here.
 
-def home_view(request:HttpRequest):
-    return render(request, 'core/home.html')
+def home_view(request: HttpRequest):
+    return render(request, 'core/pages/home.html')
 
-def base_view(request:HttpRequest):
-    return render(request, 'core/base.html')
 
-def about_view(request:HttpRequest):
-    return render(request, 'core/about.html')
+def about_view(request: HttpRequest):
+    return render(request, 'core/pages/about.html')
 
-def game_view(request:HttpRequest):
-    return render(request, 'core/game.html')
 
-def teams_view(request:HttpRequest):
-    return render(request, 'core/teams.html')
+def games_view(request: HttpRequest):
+    return render(request, 'core/pages/games.html')
 
-def infrastructure_view(request:HttpRequest):
-    return render(request, 'core/infrastructure.html')
 
-def timeline_view(request:HttpRequest):
-    return render(request, 'core/timeline.html')
+def teams_view(request: HttpRequest):
+    return render(request, 'core/pages/teams.html')
 
-def events_view(request:HttpRequest):
-    return render(request, 'core/events.html')
+
+def infrastructure_view(request: HttpRequest):
+    return render(request, 'core/pages/infrastructure.html')
+
+
+def timeline_view(request: HttpRequest):
+    return render(request, 'core/pages/timeline.html')
+
+
+def events_view(request: HttpRequest):
+    return render(request, 'core/pages/events.html')
