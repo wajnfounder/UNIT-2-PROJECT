@@ -1,0 +1,259 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Games | Saudi Esports{% endblock %}
+
+{% block content %}
+
+<section class="games-hero">
+
+  <div class="hero-bg">
+    <img src="{% static 'core/images/games_hero.jpg' %}" alt="">
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">SAUDI ESPORTS GAMES</div>
+
+    <h1>The <span>Arena</span></h1>
+
+    <p class="highlight">
+      Explore the top competitive titles shaping Saudi Arabia’s esports landscape.
+    </p>
+
+<div class="scroll-indicator">
+  <span>SCROLL TO EXPLORE</span>
+  <div class="arrow"></div>
+</div>
+
+</section>
+
+
+<!--=== GAMES GRID ===-->
+<section class="games-grid">
+
+  <!-- == VALORANT == -->
+  <div class="game-card">
+    <div class="card-img">
+      <img src="{% static 'core/images/valorant.jpg' %}">
+      <div class="img-overlay"></div>
+
+      <span class="rank" style="background:#ff3b3b">#1 in Saudi</span>
+      <div class="rating">⭐ 9.2</div>
+
+      <div class="popularity-top">
+        <span>Saudi Popularity</span>
+        <span class="percent">95%</span>
+        <div class="bar">
+          <div style="width:95%; background:linear-gradient(to right,#ff3b3b,#ff6b6b)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3>Valorant</h3>
+      <p class="sub">Riot Games · 2020</p>
+      <p class="desc">A 5v5 tactical gunplay meets unique abilities.</p>
+
+      <div class="tags">
+        <span>FPS</span><span>Tactical</span><span>Competitive</span>
+      </div>
+
+      <hr>
+
+      <div class="card-bottom">
+        <span>👥 500M+</span>
+        <span>📶 Avg 18ms</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- == FIFA == -->
+  <div class="game-card">
+    <div class="card-img">
+      <img src="{% static 'core/images/fifa.avif' %}">
+      <div class="img-overlay"></div>
+
+      <span class="rank" style="background:#00d4aa">#2 in Saudi</span>
+      <div class="rating">⭐ 8.7</div>
+
+      <div class="popularity-top">
+        <span>Saudi Popularity</span>
+        <span class="percent">88%</span>
+        <div class="bar">
+          <div style="width:88%; background:linear-gradient(to right,#00d4aa,#00ffc3)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3>EA FC 25</h3>
+      <p class="sub">EA Sports · 2024</p>
+      <p class="desc">Most popular football simulation game.</p>
+
+      <div class="tags">
+        <span>Sports</span><span>Football</span><span>Multiplayer</span>
+      </div>
+
+      <hr>
+
+      <div class="card-bottom">
+        <span>👥 300M+</span>
+        <span>📶 Avg 22ms</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- == PUBG == -->
+  <div class="game-card">
+    <div class="card-img">
+      <img src="{% static 'core/images/pubg.jpg' %}">
+      <div class="img-overlay"></div>
+
+      <span class="rank" style="background:#ff9f1c">#3 in Saudi</span>
+      <div class="rating">⭐ 8.9</div>
+
+      <div class="popularity-top">
+        <span>Saudi Popularity</span>
+        <span class="percent">82%</span>
+        <div class="bar">
+          <div style="width:82%; background:linear-gradient(to right,#ff9f1c,#ffd166)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3>PUBG: Battlegrounds</h3>
+      <p class="sub">Krafton · 2017</p>
+      <p class="desc">The original battle royale experience.</p>
+
+      <div class="tags">
+        <span>Battle Royale</span><span>Survival</span><span>Shooter</span>
+      </div>
+
+      <hr>
+
+      <div class="card-bottom">
+        <span>👥 400M+</span>
+        <span>📶 Avg 25ms</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- == LOL == -->
+  <div class="game-card">
+    <div class="card-img">
+      <img src="{% static 'core/images/lol.png' %}">
+      <div class="img-overlay"></div>
+
+      <span class="rank" style="background:#ffd60a">#4 in Saudi</span>
+      <div class="rating">⭐ 9.0</div>
+
+      <div class="popularity-top">
+        <span>Saudi Popularity</span>
+        <span class="percent">79%</span>
+        <div class="bar">
+          <div style="width:79%; background:linear-gradient(to right,#ffd60a,#ffea00)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3>League of Legends</h3>
+      <p class="sub">Riot Games · 2009</p>
+      <p class="desc">The world's most played PC MOBA game.</p>
+
+      <div class="tags">
+        <span>MOBA</span><span>Strategy</span><span>Team</span>
+      </div>
+
+      <hr>
+
+      <div class="card-bottom">
+        <span>👥 150M+</span>
+        <span>📶 Avg 20ms</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- == FORTNITE == -->
+  <div class="game-card">
+    <div class="card-img">
+      <img src="{% static 'core/images/fortnite.webp' %}">
+      <div class="img-overlay"></div>
+
+      <span class="rank" style="background:#00bbf9">#5 in Saudi</span>
+      <div class="rating">⭐ 8.5</div>
+
+      <div class="popularity-top">
+        <span>Saudi Popularity</span>
+        <span class="percent">75%</span>
+        <div class="bar">
+          <div style="width:75%; background:linear-gradient(to right,#00bbf9,#48cae4)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3>Fortnite</h3>
+      <p class="sub">Epic Games · 2017</p>
+      <p class="desc">Build and survive, creative battle royale.</p>
+
+      <div class="tags">
+        <span>Battle Royale</span><span>Building</span><span>Creative</span>
+      </div>
+
+      <hr>
+
+      <div class="card-bottom">
+        <span>👥 350M+</span>
+        <span>📶 Avg 28ms</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- == CS2 == -->
+  <div class="game-card">
+    <div class="card-img">
+      <img src="{% static 'core/images/cs2.avif' %}">
+      <div class="img-overlay"></div>
+
+      <span class="rank" style="background:#ff6b35">#6 in Saudi</span>
+      <div class="rating">⭐ 9.1</div>
+
+      <div class="popularity-top">
+        <span>Saudi Popularity</span>
+        <span class="percent">85%</span>
+        <div class="bar">
+          <div style="width:85%; background:linear-gradient(to right,#ff6b35,#ff924c)"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-content">
+      <h3>Counter-Strike 2</h3>
+      <p class="sub">Valve · 2023</p>
+      <p class="desc">legendary reborn with next-gen precision.</p>
+
+      <div class="tags">
+        <span>FPS</span><span>Tactical</span><span>Competitive</span>
+      </div>
+
+      <hr>
+
+      <div class="card-bottom">
+        <span>👥 200M+</span>
+        <span>📶 Avg 15ms</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}
