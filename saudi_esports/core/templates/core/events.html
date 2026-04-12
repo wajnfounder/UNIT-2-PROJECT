@@ -1,0 +1,391 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- ================= HERO ================= -->
+<section class="events-hero">
+
+  <!-- BG IMAGE -->
+  <div class="events-hero-bg">
+    <img src="{% static 'core/images/events_hero.png' %}" alt="">
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="events-hero-overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="events-hero-content">
+
+    <span class="events-hero-tag">SAUDI ESPORTS EVENTS</span>
+
+    <h1 class="events-hero-title">
+      Where <span>Legends</span><br>
+      Are Made
+    </h1>
+
+    <p class="events-hero-desc">
+      From Gamers8 to world championships — Saudi Arabia hosts the biggest esports events on the planet
+    </p>
+
+    <div class="events-hero-stats">
+
+      <div class="events-hero-stat">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+        <strong>$100M+</strong>
+        <span>Total Prize Pools</span>
+      </div>
+
+      <div class="events-hero-stat">
+        <img src="{% static 'core/icons/calendar_events.png' %}">
+        <strong>200+</strong>
+        <span>Annual Events</span>
+      </div>
+
+      <div class="events-hero-stat">
+        <img src="{% static 'core/icons/world_events.png' %}">
+        <strong>128+</strong>
+        <span>Nations Competing</span>
+      </div>
+
+      <div class="events-hero-stat">
+        <img src="{% static 'core/icons/user_events.png' %}">
+        <strong>1M+</strong>
+        <span>Live Attendees</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FEATURED ================= -->
+<section class="events-featured">
+
+  <div class="events-featured-wrapper">
+
+    <div class="events-featured-card">
+
+      <!-- BG IMAGE -->
+      <div class="events-featured-bg">
+        <img src="{% static 'core/images/events_hero.png' %}" alt="">
+      </div>
+
+      <!-- OVERLAY -->
+      <div class="events-featured-overlay"></div>
+
+      <!-- CONTENT -->
+      <div class="events-featured-content">
+
+        <div class="events-featured-badges">
+          <span class="events-badge green">5TH EDITION</span>
+          <span class="events-badge done">COMPLETED</span>
+          <span class="events-badge gray">Saudi Esports Federation</span>
+        </div>
+
+        <h2 class="events-featured-title">Gamers8 2026</h2>
+
+        <p class="events-featured-subtitle">Beyond the Horizon</p>
+
+        <p class="events-featured-desc">
+          The 5th edition of Gamers8 goes beyond all limits. A groundbreaking
+          $80M prize pool across 10 titles, hosted across two iconic venues.
+        </p>
+
+        <div class="events-featured-stats">
+
+          <div class="events-featured-stat">
+            <strong>$80M</strong>
+            <span>Prize Pool</span>
+          </div>
+
+          <div class="events-featured-stat">
+            <strong>750K+</strong>
+            <span>Attendance</span>
+          </div>
+
+          <div class="events-featured-stat">
+            <strong>10</strong>
+            <span>Games</span>
+          </div>
+
+          <div class="events-featured-stat">
+            <strong>200</strong>
+            <span>Teams</span>
+          </div>
+
+        </div>
+
+        <div class="events-featured-meta">
+          <span> Jul 9 – Aug 15, 2026</span>
+          <span> Riyadh & NEOM</span>
+        </div>
+
+        <button class="view-details-btn" onclick="openModal()">
+            👁 View Full Details
+        </button>
+
+       
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div class="event-modal" id="eventModal">
+
+  <div class="event-modal-box">
+
+    <!-- CLOSE -->
+    <span class="close-btn" onclick="closeModal()">✕</span>
+
+    <!-- HERO -->
+    <div class="modal-hero">
+      <img src="{% static 'core/images/events_hero.png' %}" alt="">
+
+      <div class="modal-hero-overlay"></div>
+
+      <div class="modal-hero-content">
+        <div class="tags">
+          <span class="tag yellow">Upcoming</span>
+          <span class="tag green">5th Edition</span>
+        </div>
+
+        <h1>Gamers8 2026</h1>
+        <p>Beyond the Horizon</p>
+      </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="modal-body">
+
+      <!-- STATS -->
+      <div class="modal-stats">
+
+        <div class="stat-card">
+          <div class="icon">$</div>
+          <strong>$80M</strong>
+          <span>Prize Pool</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon">👥</div>
+          <strong>750K+</strong>
+          <span>Attendance</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon">🛡️</div>
+          <strong>200</strong>
+          <span>Teams</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon">⏱️</div>
+          <strong>37 Days</strong>
+          <span>Duration</span>
+        </div>
+
+      </div>
+
+      <!-- ABOUT -->
+      <div class="modal-section">
+        <h3>About This Event</h3>
+        <p>
+          Gamers8 2026 — Beyond the Horizon — is set to be the defining moment in esports history. 
+          For the first time, the festival spans two iconic venues: Boulevard Riyadh City and the newly completed NEOM Arena. 
+          With a staggering $80M prize pool across 10 titles and 200 competing teams from around the globe, 
+          this edition cements Saudi Arabia as the permanent capital of world esports.
+        </p>
+      </div>
+
+      <!-- HIGHLIGHTS -->
+      <div class="modal-section">
+        <h3>Key Highlights</h3>
+
+        <div class="highlights">
+          <div>✔ $80M prize pool (new record)</div>
+          <div>✔ 10 esports titles</div>
+          <div>✔ 200 competing teams</div>
+          <div>✔ Dual venue: Riyadh + NEOM</div>
+          <div>✔ 750K+ expected attendance</div>
+          <div>✔ 38-day festival</div>
+        </div>
+      </div>
+
+      <!-- TITLES -->
+      <div class="modal-section">
+        <h3>Featured Titles</h3>
+
+        <div class="games">
+          <span>Valorant</span>
+          <span>EA FC 27</span>
+          <span>PUBG</span>
+          <span>Fortnite</span>
+          <span>CS2</span>
+          <span>League of Legends</span>
+          <span>Dota 2</span>
+          <span>Mobile Legends</span>
+          <span>Free Fire</span>
+          <span>Tekken 8</span>
+        </div>
+      </div>
+
+      <!-- INFO CARD -->
+      <div class="info-box">
+
+        <div>
+          <span>Dates</span>
+          <strong>July 9 – August 15, 2026</strong>
+        </div>
+
+        <div>
+          <span>Venue</span>
+          <strong>Boulevard Riyadh City & NEOM Arena</strong>
+        </div>
+
+        <div>
+          <span>Organizer</span>
+          <strong>Saudi Esports Federation</strong>
+        </div>
+
+        <div>
+          <span>Sponsors</span>
+          <strong>STC, Mobily, Aramco, NEOM, PIF</strong>
+        </div>
+
+      </div>
+
+      <!-- TAGS -->
+      <div class="bottom-tags">
+        <span>#Flagship</span>
+        <span>#Multi-title</span>
+        <span>#Festival</span>
+        <span>#Upcoming</span>
+        <span>#Record-breaking</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("eventModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("eventModal").style.display = "none";
+}
+
+/* CLOSE WHEN CLICK X */
+window.onclick = function(e) {
+  const modal = document.getElementById("eventModal");
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+<section class="timeline-modern">
+
+  <div class="timeline-header">
+    <span class="timeline-badge">EVENT HISTORY</span>
+    <h2>The Rise of Saudi Esports Events</h2>
+  </div>
+
+  <div class="timeline-modern-wrapper">
+
+    <!-- 2017 -->
+    <div class="timeline-modern-item">
+      <div class="timeline-modern-icon blue">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+      </div>
+
+      <div class="timeline-modern-card">
+        <span class="year blue">2017</span>
+        <h3>Saudi Esports Federation Founded</h3>
+        <p>The Kingdom establishes its official esports governing body, marking the start of a new era.</p>
+      </div>
+    </div>
+
+    <!-- 2019 -->
+    <div class="timeline-modern-item">
+      <div class="timeline-modern-icon yellow">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+      </div>
+
+      <div class="timeline-modern-card">
+        <span class="year yellow">2019</span>
+        <h3>First National Esports League</h3>
+        <p>Saudi Arabia launches its first structured national esports league with 32 teams across 3 titles.</p>
+      </div>
+    </div>
+
+    <!-- 2022 -->
+    <div class="timeline-modern-item">
+      <div class="timeline-modern-icon red">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+      </div>
+
+      <div class="timeline-modern-card">
+        <span class="year red">2022</span>
+        <h3>Gamers8 Inaugural Edition</h3>
+        <p>The world's largest esports festival launches in Riyadh with a $15M prize pool and 6 titles.</p>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div class="timeline-modern-item">
+      <div class="timeline-modern-icon green">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+      </div>
+
+      <div class="timeline-modern-card">
+        <span class="year green">2023</span>
+        <h3>Gamers8 2nd Edition — $35M</h3>
+        <p>Saudi Arabia doubles down with a $35M prize pool, cementing its status as the global esports capital.</p>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div class="timeline-modern-item">
+      <div class="timeline-modern-icon purple">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+      </div>
+
+      <div class="timeline-modern-card">
+        <span class="year purple">2024</span>
+        <h3>Gamers8 3rd Edition — $45M</h3>
+        <p>A record-breaking $45M across 8 titles. Saudi Arabia hosts VCT Lock//In, Riyadh Masters, and more.</p>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="timeline-modern-item">
+      <div class="timeline-modern-icon pink">
+        <img src="{% static 'core/icons/trophy_events.png' %}">
+      </div>
+
+      <div class="timeline-modern-card">
+        <span class="year pink">2025</span>
+        <h3>Gamers8 4th Edition — $60M</h3>
+        <p>The future begins. A $60M prize pool, 9 titles, and 160 teams from around the world.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+{% endblock %}
